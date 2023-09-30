@@ -1,0 +1,442 @@
+<html>
+    <head>
+        <title>Cafe de Mecaros</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="https://kit.fontawesome.com/bdb8f07cb2.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=divice-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    </head>
+    <body>
+        <section id="banner">
+            <img src="images/coffeelogo.png" class="logo">
+            <div class="banner-text">
+                <h1 class="animate__animated animate__fadeInDown animate__delay-1s">Cafe de Mecaros</h1>
+                    <h2 class="animate__animated animate__zoomIn animate__delay-2s">Don't underestimate</h2>
+                    <h2 class="animate__animated animate__zoomIn animate__delay-3s">the power of good cup</h2>
+                    <h2 class="animate__animated animate__zoomIn animate__delay-4s">of</h2>
+                    <h1 class="animate__animated animate__fadeInUp animate__delay-5s">Coffee</h1>
+               <div class="banner-btn">
+                <button type="Espresso" class="btn-1" onclick="openPopup1()">Espresso</button>
+       <div class="popup1" id="popup1">
+         <img src="images/img7.jpg">
+         <h2>Espresso</h2>
+         <p>Try our new espresso taste, with improve flavor</p>
+         <button type="button" onclick="closePopup1()">OK</button>
+       </div>
+
+       <button type="Iced Coffee" class="btn-2" onclick="openPopup2()">Iced Coffee</button>
+       <div class="popup2" id="popup2">
+         <img src="images/img8.jpg">
+         <h2>Iced Coffee</h2>
+         <p>Try our new Iced Coffee taste, with improve flavor</p>
+         <button type="button" onclick="closePopup2()">OK</button>
+       </div>
+
+       <button type="Americano" class="btn-3" onclick="openPopup3()">Americano</button>
+       <div class="popup3" id="popup3">
+         <img src="images/img9.jpg">
+         <h2>Americano</h2>
+         <p>Try our new Americano taste, with improve flavor</p>
+         <button type="button" onclick="closePopup3()">OK</button>
+       </div>
+
+       <button type="Macchiato" class="btn-4" onclick="openPopup4()">Macchiato</button>
+       <div class="popup4" id="popup4">
+         <img src="images/img10.jpg">
+         <h2>Macchiato</h2>
+         <p>Try our new Macchiato taste, with improve flavor</p>
+         <button type="button" onclick="closePopup4()">OK</button>
+       </div>
+
+       <button type="Venice Coffee" class="btn-5" onclick="openPopup5()">Venice Coffee</button>
+       <div class="popup5" id="popup5">
+         <img src="images/img11.jpg">
+         <h2>Venice Coffee</h2>
+         <p>Try our new Venice Coffee taste, with improve flavor</p>
+         <button type="button" onclick="closePopup5()">OK</button>
+       </div>
+
+       <button type="Latte" class="btn-6" onclick="openPopup6()">Latte</button>
+       <div class="popup6" id="popup6">
+         <img src="images/img12.jpg">
+         <h2>Latte</h2>
+         <p>Try our new Latte taste, with improve flavor</p>
+         <button type="button" onclick="closePopup6()">OK</button>
+       </div>
+
+       <button type="Coffee Mocca" class="btn-7" onclick="openPopup7()">Coffee Mocca</button>
+       <div class="popup7" id="popup7">
+         <img src="images/img13.jpg">
+         <h2>Coffee Mocca</h2>
+         <p>Try our new Coffee Mocca taste, with improve flavor</p>
+         <button type="button" onclick="closePopup7()">OK</button>
+       </div>
+
+       <button type="Coffee with Milk" class="btn-8" onclick="openPopup8()">Coffee with Milk</button>
+       <div class="popup8" id="popup8">
+         <img src="images/img14.jpg">
+         <h2>Coffee with Milk</h2>
+         <p>Try our new Coffee with Milk taste, with improve flavor</p>
+         <button type="button" onclick="closePopup8()">OK</button>
+       </div>
+
+       <button type="Coffee with Cream" class="btn-9" onclick="openPopup9()">Coffee with Cream</button>
+       <div class="popup9" id="popup9">
+         <img src="images/img15.jpg">
+         <h2>Coffee with Cream</h2>
+         <p>Try our new Coffee with Cream taste, with improve flavor</p>
+         <button type="button" onclick="closePopup9()">OK</button>
+       </div>
+
+       <button type="Capuccino" class="btn-10" onclick="openPopup10()">Capuccino</button>
+       <div class="popup10" id="popup10">
+         <img src="images/img16.jpg">
+         <h2>Capuccino</h2>
+         <p>Try our new Capuccino taste, with improve flavor</p>
+         <button type="button" onclick="closePopup10()">OK</button>
+       </div>
+
+       <button type="Chocolate Coffee" class="btn-11" onclick="openPopup11()">Chocolate Coffee</button>
+       <div class="popup11" id="popup11">
+         <img src="images/img17.jpg">
+         <h2>Chocolate Coffee</h2>
+         <p>Try our new Chocolate Coffee taste, with improve flavor</p>
+         <button type="button" onclick="closePopup11()">OK</button>
+       </div>
+
+       <button type="Black Coffee" class="btn-12" onclick="openPopup12()">Black Coffee</button>
+       <div class="popup12" id="popup12">
+         <img src="images/img18.jpg">
+         <h2>Black Coffee</h2>
+         <p>Try our new Black Coffee taste, with improve flavor</p>
+         <button type="button" onclick="closePopup12()">OK</button>
+       </div>
+       <script>
+        
+let popup1 = document.getElementById("popup1");
+
+function openPopup1(){
+    popup1.classList.add("open-popup1");
+}
+function closePopup1(){
+    popup1.classList.remove("open-popup1");
+}
+let popup2 = document.getElementById("popup2");
+
+function openPopup2(){
+    popup2.classList.add("open-popup2");
+}
+function closePopup2(){
+    popup2.classList.remove("open-popup2");
+}
+let popup3 = document.getElementById("popup3");
+
+function openPopup3(){
+    popup3.classList.add("open-popup3");
+}
+function closePopup3(){
+    popup3.classList.remove("open-popup3");
+}
+let popup4 = document.getElementById("popup4");
+
+function openPopup4(){
+    popup4.classList.add("open-popup4");
+}
+function closePopup4(){
+    popup4.classList.remove("open-popup4");
+}
+let popup5 = document.getElementById("popup5");
+
+function openPopup5(){
+    popup5.classList.add("open-popup5");
+}
+function closePopup5(){
+    popup5.classList.remove("open-popup5");
+}
+let popup6 = document.getElementById("popup6");
+
+function openPopup6(){
+    popup6.classList.add("open-popup6");
+}
+function closePopup6(){
+    popup6.classList.remove("open-popup6");
+}
+let popup7 = document.getElementById("popup7");
+
+function openPopup7(){
+    popup7.classList.add("open-popup7");
+}
+function closePopup7(){
+    popup7.classList.remove("open-popup7");
+}
+let popup8 = document.getElementById("popup8");
+
+function openPopup8(){
+    popup8.classList.add("open-popup8");
+}
+function closePopup8(){
+    popup8.classList.remove("open-popup8");
+}
+let popup9 = document.getElementById("popup9");
+
+function openPopup9(){
+    popup9.classList.add("open-popup9");
+}
+function closePopup9(){
+    popup9.classList.remove("open-popup9");
+}
+let popup10 = document.getElementById("popup10");
+
+function openPopup10(){
+    popup10.classList.add("open-popup10");
+}
+function closePopup10(){
+    popup10.classList.remove("open-popup10");
+}
+let popup11 = document.getElementById("popup11");
+
+function openPopup11(){
+    popup11.classList.add("open-popup11");
+}
+function closePopup11(){
+    popup11.classList.remove("open-popup11");
+}
+let popup12 = document.getElementById("popup12");
+
+function openPopup12(){
+    popup12.classList.add("open-popup12");
+}
+function closePopup12(){
+    popup12.classList.remove("open-popup12");
+}
+        
+      </script>
+               </div>
+            </div>
+      
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#banner">HOME</a></li>
+                    <li><a href="#features">OUR BARISTAS</a></li>
+                    <li><a href="#service">SERVICE</a></li>
+                    <li><a href="#testimonial">TESTIMONIALS</a></li>
+                    <li><a href="#footer">CONTACT US</a></li>
+                </ul>
+            </nav> 
+        </div>
+      <div id="menuBtn">
+        <img src="images/menu.png" id="menu">
+      </div>    
+</section>
+
+
+<!-- Features -->
+
+<section id="features">
+    <div class="title-text">
+     <p>Cafe de Mecaros</p>   
+     <h3>We serve Premium</h3>
+     <h1>Coffee</h1>
+    </div>
+    <div class="features-box">
+        <div class="features">
+            <h1>Artistic Baristas</h1>
+            <div class="features-desc">
+                <div class="features-icon">
+                    <i class="fa-solid fa-mug-hot"></i>
+                </div>
+                <div class="features-text">
+                    <p>
+                        Becoming a skilled and successful barista requires a blend of passion, dedication, and continuous learning. In this guide, we break down the skills needed to be a barista.
+                    </p>
+                </div>
+            </div>
+            <h1>Fast & efficient</h1>
+            <div class="features-desc">
+                <div class="features-icon">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                </div>
+                <div class="features-text">
+                    <p>
+                        Make sure your drinks and keep up with orders, and the faster and provide more efficient service, More customers able to serve. Will want to return to a place which provides quality coffee in a quick manner.
+                    </p>
+                </div>
+            </div>
+            <h1>Customer focused</h1>
+            <div class="features-desc">
+                <div class="features-icon">
+                    <i class="fa-solid fa-arrows-to-eye"></i>
+                </div>
+                <div class="features-text">
+                    <p>
+                        Could read and write tons of articles on customer service, and I’m pretty sure you can conclude the importance of being customer focused and putting their needs first. A good barista does just that—puts customer needs first and wants to make people feel special and surpass their needs. 
+                    </p>
+                </div>
+            </div>
+            <h1>Clean & Attentive</h1>
+            <div class="features-desc">
+                <div class="features-icon">
+                    <i class="fa-solid fa-hand-sparkles"></i>
+                </div>
+                <div class="features-text">
+                    <p>
+                        Cleanliness and sanitation is very important in the food industry. As Colette says in Ratatouille, you must keep your station clean!! Having high standards of hygiene and keeping areas clean is a great trait to have. Organization wins over sloppy carelessness any day.
+                    </p>
+                </div>
+            </div>
+        </div>
+     <div class="features-img">
+            <img src="images/barista.jpg">
+     </div>
+    </div>
+</section>
+
+<!-- Food Service -->
+<section id="service">
+    <div class="title-text">
+      <p>Cafe de Mecaros</p>
+      <h1>Our services</h1> 
+    </div>
+    <div class="service-box">
+        <div class="single-service">
+        <img src="images/waitress 1.jpg">
+        <div class="overlay"></div>
+        <div class="service-desc">
+            <h3>Waiter and waitress Service</h3>
+            <hr>
+            <p>Welcome guests with a smile and friendly disposition. Promptly guide guests to their table and ensure everything is comfortable. Provide water, menus, and any complimentary items such as bread rolls or chips upon seating. Allow guests time to look over the menu and be available to answer questions.</p>
+        </div>
+        </div>
+        <div class="single-service">
+        <img src="images/chinesebanquet.jpg">
+        <div class="overlay"></div>
+        <div class="service-desc">
+            <h3>Banquet Service</h3>
+            <hr>
+            <p>Setting and staging a nice event is only half the battle; serving guests with appropriate standards and etiquette is equally as important. Standards incorporate the ways in which staff and servers present themselves and food to guests. Here are some basic guidelines for ensuring the satisfaction of event guests. 
+
+            </p> 
+        </div>
+        </div>
+        <div class="single-service">
+        <img src="images/chinesebuffet.jpg">
+        <div class="overlay"></div>
+        <div class="service-desc">
+            <h3>Buffet Service</h3>
+            <hr>
+            <p>Station-type buffet – Waiters serve the beverages while guests get the other dishes from the buffet line. Modified deluxe buffet – Tables are set with cutlery; waiters serve the beverages, coffee, and dessert while guests get the other dishes from the buffet line.</p>
+        </div>
+        </div>
+        <div class="single-service">
+        <img src="images/foodselfservice.jpg">
+        <div class="overlay"></div>
+        <div class="service-desc">
+            <h3>Semi-Self Service</h3>
+            <hr>
+            <p>A self-service restaurant is any dining establishment where diners serve themselves food or drinks and pay for the food before dining. There are many styles of self-service restaurants. With fast food dining, diners order from a cashier or a self-service kiosk.</p>
+        </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+
+         <section id="testimonial">
+           <div class="title-text">
+            <p>TESTIMONIALS</p>
+            <h1>What custumers comments</h1>
+            </div>
+            <div class="testimonial-row">
+            <div class="testimonial-col">
+            <div class="user">
+                <img src="images/marco.jpg">
+            <div class="user-info">
+                <h4>Marco Gustav <i class="fa-brands fa-twitter"></i></h4>
+                <small>@marcogustav</small>
+            </div>
+            </div>
+            <p>The staff was friendly and attentive, always making sure I was comfortable and had everything I needed. In addition to the great drinks and food, the cafe had a comfortable seating area, perfect for enjoying a quiet moment or catching up with friends.   
+            </p></div>
+            <div class="testimonial-col">
+            <div class="user">
+                <img src="images/gina.jpg">
+            <div class="user-info">
+                <h4>Gina Campbell <i class="fa-brands fa-twitter"></i></h4>
+                <small>@ginacampbell</small>
+            </div>
+            </div>      
+            <p> The place I recently visited was a cozy little cafe in the heart of the City. From the moment I walked in, Iwas greeted with warm and inviting atmosphere. The decor was charming ang simple, with just the right amount of character.
+            </p></div>
+            <div class="testimonial-col">
+            <div class="user">
+                <img src="images/couple.jpg">
+            <div class="user-info">
+                <h4>Brian&Lisa <i class="fa-brands fa-twitter"></i></h4>
+                <small>@brian&lisa</small>
+            </div>
+            </div>        
+            <p>In addition to the great drinks and foods, the cafe had a comfortable seating area, perfect for enjoying a quiet moment or catching up with friends. The overall anbience was calm and relaxed, making it the perfect spot for a relaxing break from the bustling city outside.
+            </p>
+            </div>
+            </div>  
+        </section>
+
+   <!-- Footer -->
+
+        <section id="footer">
+              <img src="images/cafe-header.png" class="footer-img">
+             <div class="title-text">
+             <p>CONTACTS</p>
+             <h1>Visit our Cafe today</h1>
+             </div>
+             <div class="footer-row">
+             <div class="footer-left">
+                <h1>Opening Hours</h1>
+                <p><i class="fa-solid fa-clock"></i> Monday to Friday - 9AM to 10PM</p>
+                <p><i class="fa-solid fa-clock"></i> Saturday and Sunday - 6AM to 11PM</p>
+             </div>
+             <div class="footer-right">
+                <h1>Contact us</h1>
+                <p>CQMH+FC2, Balamban, Cebu <i class="fa-solid fa-location-dot"></i> </p>
+                <p>cafe.mecaros@gmail.com <i class="fa-solid fa-paper-plane"></i></p>
+                <p>Cell number: 09231158063 <i class="fa-solid fa-mobile"></i></p>
+                <p>Tell number:(032)520 3744 <i class="fa-solid fa-phone"></i></p>
+             </div>
+             </div>
+             <div class="social-links">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-square-snapchat"></i>
+                <i class="fa-brands fa-square-whatsapp"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <p>Copyrights 2023 Choi Cafe. All Rights Reserved.<br>
+                   Designed by Choi Digital Arts </p>
+             </div>
+        </section>
+</section>
+
+      <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "images/close.png";
+            }else{
+                sideNav.style.right = "-250px";
+                menu.src = "images/menu.png";
+            }
+        }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+      </script> 
+    </body>
+</html>
